@@ -3,485 +3,471 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free Masterclass — Money Mastery Institute</title>
-<meta name="description" content="New habits don't stick on old beliefs. Kevin names the four beliefs that run people's money, live.">
+<title>You Make Good Money. You Were Just Never Taught The Rules. | Money Mastery Institute</title>
+<meta name="description" content="A free live masterclass with Kevin Jaramillo on the rules of money nobody ever sat you down and taught you.">
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 <style>
 /* ══════════════════════════════════════════════════════════════════
-   MMI — WEBINAR REGISTRATION (post-purchase)
-   Built on the anatomy of karlaesandoval.com/register, a proven
-   high-converting registration page: announcement bar → eyebrow →
-   emphasis headline → CTA → numbered "what you'll learn" → CTA →
-   two-sided qualification → CTA → proof → host → final CTA.
-   No video (Javier's call). MMI's own tokens throughout.
-   GHL-ready: armored, no standalone document wrapper.
+   MMI · FREE LIVE MASTERCLASS · REGISTRATION
+   Structure: karlaesandoval.com/mfm2026-321681 (our shipped page).
+   Skin: Kevin's own masterclass deck — Libre Baskerville + DM Sans,
+   navy #14213D, antique gold #C9A227, paper #FBFBF8, warm #F6F2E3,
+   slate #4A5568 — every value sampled from the deck's pixels.
+   Two derived shades of the deck gold (same hue and saturation,
+   lightness lowered) keep gold legible on the light ground:
+     --gold-display #AB8A21  3.2:1 on paper  large display type only
+     --gold-ink     #846B1A  4.9:1 on paper  small text
+   Copy: the deck, paraphrased or verbatim. Nothing invented.
+   GHL-ready: armored, no document wrapper.
    ══════════════════════════════════════════════════════════════════ */
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 
 /* ══ GHL EMBED ARMOR ══ */
-html,body{background:#F4F5FA !important;margin:0 !important;padding:0 !important;overflow-x:clip}
+html,body{background:#FBFBF8 !important;margin:0 !important;padding:0 !important;overflow-x:clip}
 body{min-height:100vh}
-#mmi-root::before{content:'';position:fixed;inset:0;background:#F4F5FA;z-index:-2;pointer-events:none}
+#mmi-root::before{content:'';position:fixed;inset:0;background:#FBFBF8;z-index:-2;pointer-events:none}
 body > div, body > section,
 [class*="c-section"],[class*="c-row"],[class*="c-column"],
 [class*="c-wrapper"],[class*="hl_page"],[class*="inner"],[class*="custom-code"]{background:transparent !important}
 [class*="c-section"],[class*="c-row"],[class*="c-column"],[class*="c-wrapper"],[class*="custom-code"]{
   padding:0 !important;margin:0 !important;max-width:none !important;width:100% !important;border:0 !important}
 
-:root{
-  --bg:#F4F5FA; --paper:#FFFFFF; --bg-warm:#EEF0F8;
-  --ink:#0A0F2E; --body:#4A4A4A;
-  --t-1:rgba(10,15,46,1); --t-2:rgba(10,15,46,.74); --t-3:rgba(10,15,46,.54); --t-4:rgba(10,15,46,.36); --t-5:rgba(10,15,46,.2);
-  --hair:rgba(10,15,46,.10); --hair-2:rgba(10,15,46,.055);
-  --gold:#EEBD30; --gold-light:#FFD14A; --gold-deep:#C6960B;
-  --gold-soft:rgba(238,189,48,.12); --gold-line:rgba(238,189,48,.35);
-  --blue:#0000FF; --blue-soft:rgba(0,0,255,.06); --blue-line:rgba(0,0,255,.18);
-  --navy:#00008B; --navy-deep:#00007A;
-  --success:#0A8A4A; --success-soft:rgba(10,138,74,.09); --success-line:rgba(10,138,74,.26);
-  --danger:#C0200A;
-  --r-core:18px; --r-shell:24px; --r-pill:999px;
-  --sh-rest:0 20px 50px -22px rgba(10,15,46,.16);
-  --sh-lift:0 34px 80px -34px rgba(10,15,46,.26);
-  --sh-gold:0 12px 34px -8px rgba(238,189,48,.42);
-  --ease:cubic-bezier(.32,.72,0,1); --ease-out:cubic-bezier(.22,1,.36,1);
+#mmi-root{
+  --navy:#14213D; --navy-2:#1C2C4E;
+  --gold:#C9A227; --gold-display:#AB8A21; --gold-ink:#846B1A;
+  --paper:#FBFBF8; --warm:#F6F2E3; --white:#FFFFFF;
+  --ink:#14213D; --slate:#4A5568; --slate-2:#6B7485;
+  --hair:rgba(20,33,61,.10); --hair-2:rgba(20,33,61,.16);
+  --serif:'Libre Baskerville',Georgia,'Times New Roman',serif;
+  --sans:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --sh:0 20px 50px -22px rgba(20,33,61,.18);
+  --sh-lg:0 40px 90px -36px rgba(20,33,61,.30);
+  --ease:cubic-bezier(.22,1,.36,1);
+
+  position:relative;z-index:0;background:var(--paper) !important;width:100%;margin:0;padding:0;
+  font-family:var(--sans);font-size:17px;line-height:1.65;color:var(--slate);text-align:left;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
 }
-
-#mmi-root{position:relative;z-index:0;background:var(--bg) !important;width:100%;margin:0;padding:0;
-  font-family:'Poppins',system-ui,sans-serif;font-size:16.5px;line-height:1.62;color:var(--t-1);text-align:left;overflow-x:hidden}
 #mmi-root *{box-sizing:border-box}
-#mmi-root img{max-width:100%}
-::selection{background:var(--gold);color:var(--ink)}
+#mmi-root img{max-width:100%;display:block}
+#mmi-root ::selection{background:var(--gold);color:var(--navy)}
 
-h1,h2,h3,.serif{font-family:'Libre Franklin',system-ui,sans-serif}
-.num,.bebas{font-family:'Bebas Neue',system-ui,sans-serif}
+.w{width:100%;max-width:1160px;margin:0 auto;padding:0 32px}
+.w-md{width:100%;max-width:980px;margin:0 auto;padding:0 32px}
+.sec{padding:104px 0}
+.warm{background:var(--warm)}
+.c{text-align:center}
 
-.wrap{width:100%;max-width:1140px;margin:0 auto;padding:0 32px}
-.wrap-narrow{width:100%;max-width:880px;margin:0 auto;padding:0 32px}
-.sec{padding:88px 0}
-.sec-tight{padding:66px 0}
-.center{text-align:center}
+.kick{display:block;font-family:var(--sans);font-size:13px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-ink);margin-bottom:18px}
+.h2{font-family:var(--serif);font-weight:700;font-size:clamp(32px,4vw,46px);line-height:1.14;letter-spacing:-.6px;color:var(--ink)}
+.h2 em{font-style:italic;font-weight:400;color:var(--gold-display)}
+.lead{font-size:18px;line-height:1.6;color:var(--slate);max-width:600px;margin:16px auto 0}
 
 /* ══ announcement bar ══ */
-.bar{background:var(--navy);color:#fff;position:relative;z-index:2}
-.bar-in{display:flex;align-items:center;justify-content:center;gap:14px;padding:13px 20px;flex-wrap:wrap;text-align:center}
-.bar-tick{width:21px;height:21px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.bar-tick svg{width:11px;height:11px;stroke:var(--navy);stroke-width:3.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
-.bar-t{font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:.1em;color:var(--gold)}
-.bar-s{font-size:13.5px;color:rgba(255,255,255,.72)}
-
-.eyebrow{display:inline-block;font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:.18em;color:var(--blue);margin-bottom:18px}
+.bar{background:var(--navy);color:#fff;text-align:center;padding:14px 20px}
+.bar span{font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.bar b{color:var(--gold);font-weight:600}
 
 /* ══ hero ══ */
-.hero{padding:74px 0 78px;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;left:50%;top:-46%;width:76vw;height:130%;transform:translateX(-50%);
-  background:radial-gradient(50% 50% at 50% 50%,rgba(238,189,48,.16) 0%,transparent 68%);pointer-events:none}
-.hero-in{position:relative;text-align:center;display:flex;flex-direction:column;align-items:center}
-.hero h1{font-size:clamp(34px,4.4vw,56px);font-weight:800;letter-spacing:-1px;line-height:1.08;color:var(--t-1);max-width:none;margin-bottom:22px}
-.hero h1 span{white-space:nowrap}
-.hero h1 span{display:block}
-.hero h1 .accent{font-style:italic;font-weight:700;color:var(--blue)}
-.hero-sub{font-size:18px;color:var(--body);line-height:1.62;max-width:56ch;margin-bottom:34px}
-.hero-sub strong{font-weight:600;color:var(--t-1)}
+.hero{padding:60px 0 92px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;left:50%;top:-220px;width:1100px;height:620px;transform:translateX(-50%);
+  background:radial-gradient(closest-side,rgba(201,162,39,.13),transparent);pointer-events:none}
+.hero-in{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(36px,5vw,62px);line-height:1.1;letter-spacing:-1.2px;color:var(--ink);margin-bottom:22px}
+.hero h1 span{display:block;white-space:nowrap}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--gold-display);letter-spacing:-.8px}
+.hero-sub{font-size:19px;line-height:1.58;color:var(--slate);max-width:640px;margin-bottom:40px}
+.hero-sub strong{color:var(--ink);font-weight:600}
+
+.frame{position:relative;width:100%;max-width:780px;aspect-ratio:16/9;border-radius:18px;overflow:hidden;
+  border:1px solid var(--navy);box-shadow:var(--sh-lg),0 1px 0 rgba(255,255,255,.6) inset;margin-bottom:40px;background:var(--warm)}
+.frame img{width:100%;height:100%;object-fit:cover;object-position:50% 28%}
+.frame::after{content:'';position:absolute;inset:auto 0 0 0;height:42%;background:linear-gradient(to top,rgba(20,33,61,.62),transparent);pointer-events:none}
+.plate{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:2;display:inline-flex;align-items:center;gap:10px;
+  padding:13px 24px;border-radius:999px;background:rgba(20,33,61,.86);border:1px solid rgba(255,255,255,.14);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);white-space:nowrap}
+.plate i{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(201,162,39,.22);font-style:normal;animation:live 2.2s ease-in-out infinite}
+@keyframes live{50%{box-shadow:0 0 0 7px rgba(201,162,39,0)}}
+.plate span{font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#fff}
 
 /* ══ CTA ══ */
-.cta{display:inline-flex;align-items:center;gap:14px;padding:17px 17px 17px 40px;border:none;border-radius:var(--r-pill);cursor:pointer;
-  background:linear-gradient(135deg,var(--gold-deep) 0%,var(--gold) 52%,var(--gold-light) 100%);
-  color:var(--ink);font-family:'Poppins',sans-serif;font-size:16.5px;font-weight:700;letter-spacing:-.1px;
-  box-shadow:var(--sh-gold);transition:transform .5s var(--ease),box-shadow .5s var(--ease);text-decoration:none}
-.cta:hover{transform:translateY(-2px);box-shadow:0 20px 48px -10px rgba(238,189,48,.55)}
-.cta:active{transform:scale(.985) translateY(0)}
-.cta .knob{width:36px;height:36px;border-radius:50%;background:rgba(10,15,46,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .5s var(--ease),background .5s var(--ease)}
-.cta:hover .knob{transform:translateX(3px) scale(1.06);background:rgba(10,15,46,.18)}
-.cta .knob svg{width:15px;height:15px;stroke:var(--ink);stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
-.risk{margin-top:15px;font-family:'Bebas Neue',sans-serif;font-size:14.5px;letter-spacing:.14em;color:var(--t-3)}
-.cta-block{display:flex;flex-direction:column;align-items:center}
+.cta-w{display:flex;flex-direction:column;align-items:center}
+.cta{display:inline-flex;align-items:center;gap:12px;padding:20px 40px;border:0;border-radius:999px;cursor:pointer;
+  background:linear-gradient(180deg,var(--navy-2),var(--navy));color:#fff;font-family:var(--sans);font-size:16.5px;font-weight:600;letter-spacing:.1px;
+  box-shadow:0 18px 40px -14px rgba(20,33,61,.55),inset 0 1px 0 rgba(255,255,255,.12);transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
+.cta svg{width:18px;height:18px;stroke:var(--gold);stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:transform .45s var(--ease)}
+.cta:hover{transform:translateY(-2px);box-shadow:0 24px 50px -14px rgba(20,33,61,.62),inset 0 1px 0 rgba(255,255,255,.12)}
+.cta:hover svg{transform:translateX(4px)}
+.cta:active{transform:translateY(0) scale(.985)}
+.cta:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+.risk{margin-top:18px;font-size:11.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--slate-2)}
 
-/* ══ detail chips ══ */
-.detail{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:32px}
-.chip{display:flex;align-items:center;gap:10px;padding:11px 19px;border-radius:var(--r-pill);background:var(--paper);border:1px solid var(--hair);box-shadow:var(--sh-rest)}
-.chip svg{width:15px;height:15px;stroke:var(--blue);stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
-.chip s{text-decoration:none;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--t-4);display:block}
-.chip b{font-size:13.5px;font-weight:600;color:var(--t-1)}
-
-/* ══ section head ══ */
-.shead{text-align:center;max-width:60ch;margin:0 auto 48px}
-.shead h2{font-size:clamp(30px,3.8vw,46px);font-weight:800;letter-spacing:-.6px;line-height:1.12;color:var(--t-1)}
-.shead h2 em{font-style:italic;font-weight:700;color:var(--blue)}
-.shead p{margin-top:16px;font-size:17px;color:var(--body);line-height:1.62}
-
-/* ══ learn cards ══ */
-.learn{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-bottom:44px}
-.lc{display:grid;grid-template-columns:56px minmax(0,1fr);gap:16px;align-items:start;padding:28px 30px;
-  background:var(--paper);border:1px solid var(--hair);border-radius:var(--r-core);box-shadow:inset 0 1px 0 #fff,var(--sh-rest);
-  transition:transform .55s var(--ease),box-shadow .55s var(--ease)}
-.lc:hover{transform:translateY(-4px);box-shadow:inset 0 1px 0 #fff,var(--sh-lift)}
-.lc-n{font-family:'Libre Franklin',serif;font-style:italic;font-weight:700;font-size:40px;line-height:.9;color:var(--blue)}
-.lc-b{font-size:15.5px;line-height:1.6;color:var(--body)}
-.lc-b strong{font-weight:700;color:var(--t-1)}
-
-/* ══ the four beliefs strip ══ */
-.beliefs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-.bf{position:relative;padding:24px 20px;background:var(--paper);border:1px solid var(--hair);border-radius:var(--r-core);
-  box-shadow:inset 0 1px 0 #fff,var(--sh-rest);transition:transform .55s var(--ease),box-shadow .55s var(--ease)}
-.bf:hover{transform:translateY(-4px);box-shadow:inset 0 1px 0 #fff,var(--sh-lift)}
-.bf::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:var(--r-core) var(--r-core) 0 0}
-.bf:nth-child(1)::before{background:#0044bb}
-.bf:nth-child(2)::before{background:#c04a10}
-.bf:nth-child(3)::before{background:#0a7a40}
-.bf:nth-child(4)::before{background:#a07000}
-.bf-e{font-size:20px;line-height:1;margin-bottom:10px;display:block}
-.bf-n{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--t-4);margin-bottom:8px}
-.bf-q{font-family:'Libre Franklin',sans-serif;font-style:italic;font-weight:600;font-size:15px;line-height:1.42;color:var(--t-1)}
-.bf.is-yours{border-color:var(--gold);box-shadow:0 0 0 3px var(--gold-soft),var(--sh-lift)}
-.bf-y{display:none;position:absolute;top:-10px;right:14px;padding:3px 11px;border-radius:var(--r-pill);
-  background:linear-gradient(135deg,var(--gold-deep),var(--gold));color:var(--ink);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
-.bf.is-yours .bf-y{display:block}
+/* ══ learn ══ */
+.learn{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:980px;margin:52px auto 48px}
+.lc{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;align-items:center;padding:34px 36px 34px 30px;background:var(--white);
+  border:1px solid var(--hair);border-radius:18px;box-shadow:var(--sh);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.lc:hover{transform:translateY(-3px);box-shadow:var(--sh-lg)}
+.lc-n{font-family:var(--serif);font-style:italic;font-size:46px;line-height:1;color:var(--gold-display);text-align:center}
+.lc p{font-size:16.5px;line-height:1.6;color:var(--slate)}
+.lc p strong{color:var(--ink);font-weight:600}
 
 /* ══ qualification ══ */
-.qual{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.qc{padding:36px 34px;border-radius:var(--r-shell)}
-.qc-yes{background:var(--paper);border:1px solid var(--hair);box-shadow:inset 0 1px 0 #fff,var(--sh-rest)}
-.qc-no{background:transparent;border:1px dashed var(--t-5)}
-.qc h3{font-family:'Libre Franklin',sans-serif;font-weight:700;font-size:23px;color:var(--t-1);margin-bottom:22px;letter-spacing:-.3px}
-.qc h3 em{font-style:italic;font-weight:700}
-.qc-yes h3 em{color:var(--success)}
-.qc-no h3 em{color:var(--danger)}
+.qual{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:56px 0 52px}
+.qc{padding:42px 40px;border-radius:18px}
+.qc-y{background:var(--white);border:1px solid var(--hair);box-shadow:var(--sh-lg)}
+.qc-n{border:1px dashed var(--hair-2);background:transparent}
+.qc h3{font-family:var(--serif);font-weight:700;font-size:28px;line-height:1.2;letter-spacing:-.4px;color:var(--ink);margin-bottom:24px}
+.qc h3 em{font-style:italic;font-weight:400;color:var(--gold-display)}
 .qc ul{list-style:none}
-.qc li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:11px;align-items:start;margin-bottom:15px;font-size:15.5px;line-height:1.56;color:var(--body)}
+.qc li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:12px;margin-bottom:16px;font-size:16px;line-height:1.55;color:var(--slate)}
 .qc li:last-child{margin-bottom:0}
-.qc li strong{font-weight:600;color:var(--t-1)}
-.qc li svg{width:15px;height:15px;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round;margin-top:4px}
-.qc-yes li svg{stroke:var(--success)}
-.qc-no li svg{stroke:var(--danger);opacity:.65}
-
-/* ══ proof band ══ */
-.proof{background:var(--navy);color:#fff;position:relative;overflow:hidden}
-.proof::before{content:'';position:absolute;left:50%;top:-40%;width:80vw;height:130%;transform:translateX(-50%);
-  background:radial-gradient(50% 50% at 50% 50%,rgba(238,189,48,.17) 0%,transparent 70%);pointer-events:none}
-.proof-in{position:relative;text-align:center;display:flex;flex-direction:column;align-items:center}
-.proof-eyebrow{font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:.2em;color:rgba(255,255,255,.5);margin-bottom:26px}
-.proof-q{font-family:'Libre Franklin',sans-serif;font-weight:700;font-size:clamp(24px,3.2vw,38px);line-height:1.28;letter-spacing:-.4px;color:rgba(255,255,255,.72);max-width:26ch}
-.proof-q b{color:var(--gold);font-weight:800;font-style:italic}
-.proof-by{margin-top:26px;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+.qc li strong{color:var(--ink);font-weight:600}
+.qc li svg{width:15px;height:15px;margin-top:5px;fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.qc-y li svg{stroke:var(--gold-ink)}
+.qc-n li svg{stroke:var(--slate-2);opacity:.7}
 
 /* ══ host ══ */
-.host{display:grid;grid-template-columns:auto minmax(0,1fr);gap:26px;align-items:start;padding:40px 42px;
-  background:var(--paper);border:1px solid var(--hair);border-radius:var(--r-shell);box-shadow:inset 0 1px 0 #fff,var(--sh-rest)}
-.host-plate{width:76px;height:76px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;flex-shrink:0;padding:12px}
-.host-plate img{width:100%;height:auto;display:block}
-.host-e{font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:.18em;color:var(--blue);margin-bottom:8px}
-.host-n{font-family:'Libre Franklin',sans-serif;font-weight:800;font-size:27px;letter-spacing:-.4px;color:var(--t-1);margin-bottom:14px}
-.host-n em{font-style:italic;font-weight:700;color:var(--blue)}
-.host-b{font-size:16px;line-height:1.66;color:var(--body);margin-bottom:12px}
-.host-b:last-child{margin-bottom:0}
-.host-b strong{font-weight:600;color:var(--t-1)}
+.host{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px;align-items:center}
+.stat-card{position:relative;background:var(--navy);border-radius:22px;padding:64px 52px 56px;color:#fff;box-shadow:var(--sh-lg);overflow:hidden}
+.stat-card::before{content:'';position:absolute;right:-120px;top:-120px;width:320px;height:320px;border-radius:50%;background:radial-gradient(closest-side,rgba(201,162,39,.18),transparent)}
+.av{position:absolute;left:52px;top:0;z-index:2;width:92px;height:92px;border-radius:50%;overflow:hidden;border:4px solid var(--warm);box-shadow:var(--sh)}
+.av img{width:100%;height:100%;object-fit:cover}
+.av-wrap{position:relative;padding-top:46px}
+.sc-num{position:relative;font-family:var(--serif);font-size:clamp(84px,9vw,120px);line-height:1;color:var(--gold);letter-spacing:-2px;margin-bottom:22px}
+.sc-cap{position:relative;font-size:18px;line-height:1.55;color:rgba(255,255,255,.86);max-width:30ch}
+.sc-src{position:relative;margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.host-t .h2{margin-bottom:26px}
+.host-t p{font-size:17px;line-height:1.72;color:var(--slate);margin-bottom:18px}
+.host-t p strong{color:var(--ink);font-weight:600}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:34px}
+.st{background:var(--white);border:1px solid var(--hair);border-radius:14px;padding:22px 16px 20px;text-align:center;box-shadow:var(--sh)}
+.st b{display:block;font-family:var(--serif);font-weight:700;font-size:32px;line-height:1;color:var(--ink);margin-bottom:10px;letter-spacing:-.5px}
+.st span{display:block;font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--slate-2);line-height:1.5}
 
-/* ══ close ══ */
-.close{background:var(--bg-warm);border-top:1px solid var(--hair)}
-.skip{margin-top:24px;font-size:13.5px;color:var(--t-4)}
-.skip a{color:var(--t-3);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
-.skip a:hover{color:var(--t-1)}
+/* ══ results ══ */
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:56px 0 52px}
+.q{display:flex;flex-direction:column;padding:38px 34px 32px;background:var(--white);border:1px solid var(--hair);border-radius:18px;box-shadow:var(--sh)}
+.q-mark{font-family:var(--serif);font-size:64px;line-height:.6;color:var(--gold);height:30px;margin-bottom:14px}
+.q blockquote{font-family:var(--serif);font-size:18px;line-height:1.6;color:var(--ink);flex:1;margin-bottom:28px}
+.q blockquote em{font-style:normal;color:var(--gold-ink);font-weight:700}
+.q-by{display:flex;align-items:center;gap:14px;padding-top:22px;border-top:1px solid var(--hair)}
+.q-in{width:44px;height:44px;border-radius:50%;background:var(--navy);color:var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:18px;flex-shrink:0}
+.q-meta b{display:block;font-size:15px;font-weight:700;color:var(--ink);line-height:1.3}
+.q-meta i{display:block;font-style:normal;font-size:13.5px;color:var(--slate-2);line-height:1.4}
 
-.foot{background:var(--navy);color:rgba(255,255,255,.6);padding:28px 0}
-.foot-in{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
-.foot-plate{display:inline-flex;align-items:center;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-pill);padding:9px 15px}
-.foot-logo{height:23px;width:auto;display:block}
-.foot-copy{font-size:12.5px;color:rgba(255,255,255,.4)}
+/* ══ footer ══ */
+.foot{background:var(--navy);text-align:center;padding:72px 0 44px}
+.foot img{height:40px;width:auto;margin:0 auto 18px}
+.foot-tag{font-size:12px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.foot-rule{height:1px;background:rgba(255,255,255,.12);margin:40px 0 26px}
+.foot-copy{font-size:13px;color:rgba(255,255,255,.5)}
+
+/* ══ modal (GHL registration form) ══ */
+.modal{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(20,33,61,.62);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.modal.open{display:flex}
+.modal-box{position:relative;width:100%;max-width:520px;max-height:92vh;overflow:auto;background:var(--paper);border-radius:20px;box-shadow:0 50px 120px -30px rgba(0,0,0,.5);padding:44px 34px 30px;animation:pop .45s var(--ease)}
+@keyframes pop{from{opacity:0;transform:translateY(16px) scale(.98)}}
+.modal-x{position:absolute;right:14px;top:14px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(20,33,61,.07);color:var(--ink);font-size:22px;line-height:1;cursor:pointer}
+.modal-x:hover{background:rgba(20,33,61,.12)}
+.modal-h{font-family:var(--serif);font-weight:700;font-size:26px;line-height:1.25;color:var(--ink);text-align:center;margin-bottom:6px}
+.modal-s{font-size:15px;color:var(--slate-2);text-align:center;margin-bottom:22px}
+.modal iframe{width:100%;min-height:460px;border:0;border-radius:12px;background:#fff}
+
+/* ══ sticky mobile CTA ══ */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:900;display:none;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(251,251,248,.94);border-top:1px solid var(--hair);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transform:translateY(110%);transition:transform .5s var(--ease)}
+.sticky.show{transform:none}
+.sticky .cta{width:100%;justify-content:center;padding:17px 24px}
 
 /* ══ reveal ══ */
-.rv{opacity:0;transform:translateY(24px);filter:blur(6px);transition:opacity .85s var(--ease-out),transform .85s var(--ease-out),filter .85s var(--ease-out)}
-.rv.in{opacity:1;transform:none;filter:blur(0)}
-.hl{opacity:0;transform:translateY(16px);animation:hIn .9s var(--ease-out) forwards}
-.hl-1{animation-delay:.05s}.hl-2{animation-delay:.15s}.hl-3{animation-delay:.26s}.hl-4{animation-delay:.38s}.hl-5{animation-delay:.5s}
-@keyframes hIn{to{opacity:1;transform:none}}
-@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;filter:none;transition:none}.hl{opacity:1;transform:none;animation:none}}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.plate i{animation:none}}
 
 /* ══ responsive ══ */
-@media(max-width:900px){
-  .wrap,.wrap-narrow{padding:0 22px}
-  .learn{grid-template-columns:1fr}
-  .beliefs{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .qual{grid-template-columns:1fr}
+@media(max-width:980px){
+  .host{grid-template-columns:1fr;gap:64px}
+  .quotes{grid-template-columns:1fr;max-width:560px;margin-left:auto;margin-right:auto}
 }
-@media(max-width:768px){
-  .sec{padding:64px 0}
-  .hero{padding:52px 0 60px}
-  .host{grid-template-columns:1fr;text-align:center;justify-items:center;padding:32px 26px}
-  .bar-in{flex-direction:column;gap:5px}
+@media(max-width:820px){
+  .learn,.qual{grid-template-columns:1fr}
+  .sec{padding:76px 0}
+  .hero{padding:44px 0 70px}
+  .sticky{display:block}
+  .foot{padding-bottom:110px}
 }
 @media(max-width:640px){
-  .wrap,.wrap-narrow{padding:0 18px}
-  .hero h1 span{white-space:normal}
-  .beliefs{grid-template-columns:1fr}
-  .cta{padding:16px 16px 16px 28px;font-size:15.5px}
-  .lc{grid-template-columns:44px minmax(0,1fr);gap:12px;padding:24px 22px}
-  .lc-n{font-size:32px}
-  .qc{padding:28px 24px}
-  .foot-in{flex-direction:column;text-align:center;justify-content:center}
+  .w,.w-md{padding:0 20px}
+  .hero h1{font-size:33px;line-height:1.14;letter-spacing:-.6px;text-wrap:balance;max-width:330px}
+  .hero h1 span{display:inline;white-space:normal}
+  .hero h1 span:last-child{display:block;margin-top:4px}
+  .frame{aspect-ratio:4/3}
+  .frame img{object-position:50% 22%}
+  .hero-sub{font-size:17px}
+  .bar{padding:12px 14px}
+  .bar span{font-size:10.5px;letter-spacing:.09em}
+  .plate{bottom:14px;padding:10px 18px}
+  .plate span{font-size:10.5px;letter-spacing:.16em}
+  .lc{padding:26px 22px 26px 16px;grid-template-columns:48px minmax(0,1fr)}
+  .lc-n{font-size:38px}
+  .qc{padding:32px 24px}
+  .stat-card{padding:60px 30px 40px}
+  .av{left:30px;width:80px;height:80px}
+  .av-wrap{padding-top:40px}
+  .stats{grid-template-columns:1fr 1fr 1fr;gap:10px}
+  .st{padding:18px 8px 16px}
+  .st b{font-size:24px}
+  .st span{font-size:9.5px;letter-spacing:.12em}
+  .q{padding:32px 26px 26px}
+  .cta{padding:18px 30px;font-size:16px}
 }
 </style>
 
 <div id="mmi-root">
 
-  <!-- ══════════ ANNOUNCEMENT BAR ══════════ -->
-  <div class="bar">
-    <div class="bar-in">
-      <span class="bar-tick"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span>
-      <span class="bar-t" id="bar-date">FREE LIVE MASTERCLASS &middot; DATE TO BE ANNOUNCED</span>
-      <span class="bar-s">Your Opening Move order is confirmed &mdash; Day One is in your inbox.</span>
-    </div>
-  </div>
+  <div class="bar"><span id="bar-text">Free Live Masterclass <b>&middot;</b> With Kevin Jaramillo</span></div>
 
   <!-- ══════════ HERO ══════════ -->
   <header class="hero">
-    <div class="wrap">
+    <div class="w">
       <div class="hero-in">
-        <div class="eyebrow hl hl-1">For Opening Move Members</div>
-        <h1>
-          <span class="hl hl-2">New Habits Don&rsquo;t Stick</span>
-          <span class="hl hl-2">On Old Beliefs.</span>
-          <span class="accent hl hl-3">Let&rsquo;s Change the Belief.</span>
+        <span class="kick rv">For Good Earners With No Plan</span>
+        <h1 class="rv">
+          <span>You Make Good Money.</span>
+          <span>You Were Just Never</span>
+          <span><em>Taught The Rules.</em></span>
         </h1>
-        <p class="hero-sub hl hl-4">
-          On this free live masterclass, Kevin names the four beliefs that quietly run
-          people&rsquo;s money &mdash; and gives you the one that replaces yours.
-          <strong>So the next seven days actually stick.</strong>
-        </p>
-        <div class="cta-block hl hl-5">
-          <button class="cta" onclick="reserveSeat()">
-            Reserve My Free Seat
-            <span class="knob"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span>
-          </button>
-          <div class="risk">100% Free For Members &middot; Live Online</div>
+        <p class="hero-sub rv">On this free live masterclass, you&rsquo;ll learn <strong>the rules of money nobody ever sat you down and taught you.</strong> So the money you already make finally has somewhere to go.</p>
+
+        <div class="frame rv">
+          <img src="https://javmartz04-ship-it.github.io/mmi-webinar-invite/kevin-hero.jpg" alt="Kevin Jaramillo, founder of Money Mastery Institute" width="2000" height="1125" fetchpriority="high">
+          <div class="plate"><i></i><span>Live With Kevin Jaramillo</span></div>
         </div>
-        <div class="detail hl hl-5">
-          <div class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span><s>When</s><b id="chip-date">To be announced</b></span></div>
-          <div class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><s>Length</s><b>About 60 minutes</b></span></div>
-          <div class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg><span><s>Where</s><b>Live online</b></span></div>
+
+        <div class="cta-w rv">
+          <button class="cta" onclick="openSeat()">Reserve My Free Seat <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <div class="risk">100% Free Live Training &middot; One Hour With Kevin</div>
         </div>
       </div>
     </div>
   </header>
 
   <!-- ══════════ WHAT YOU'LL LEARN ══════════ -->
-  <section class="sec">
-    <div class="wrap">
-      <div class="shead rv">
-        <div class="eyebrow">Inside The Free Masterclass</div>
-        <h2>Here&rsquo;s What You&rsquo;re<br><em>Going to Learn.</em></h2>
-        <p>Walk away knowing the exact sentence that&rsquo;s been making your money decisions for you.</p>
+  <section class="sec warm">
+    <div class="w">
+      <div class="c rv">
+        <span class="kick">Inside The Free Masterclass</span>
+        <h2 class="h2">Here&rsquo;s What You&rsquo;re <em>Going to Learn.</em></h2>
+        <p class="lead">Walk away knowing exactly where your money is supposed to go.</p>
       </div>
-
-      <div class="learn rv">
-        <div class="lc"><div class="lc-n">1</div><div class="lc-b"><strong>The sentence running your money</strong>, said out loud. It sounds like common sense from the inside, which is exactly why it has survived this long.</div></div>
-        <div class="lc"><div class="lc-n">2</div><div class="lc-b"><strong>Where it came from.</strong> Money beliefs are inherited, not chosen. Seeing the source is what takes the shame out of it.</div></div>
-        <div class="lc"><div class="lc-n">3</div><div class="lc-b"><strong>What it&rsquo;s actually costing you</strong>, in the specific way it shows up in your account every single month.</div></div>
-        <div class="lc"><div class="lc-n">4</div><div class="lc-b"><strong>The one that replaces it</strong>, and the first thing you do differently the moment you have it.</div></div>
+      <div class="learn">
+        <div class="lc rv"><div class="lc-n">1</div><p><strong>Why good money still leaves you standing still,</strong> and why it was never an income problem in the first place.</p></div>
+        <div class="lc rv"><div class="lc-n">2</div><p><strong>The rules nobody sat you down and taught you,</strong> and the one quietly costing you the most right now.</p></div>
+        <div class="lc rv"><div class="lc-n">3</div><p><strong>What your Money Type means for your money,</strong> and the roadblock each type runs into first.</p></div>
+        <div class="lc rv"><div class="lc-n">4</div><p><strong>Why the plan has to come before the money grows,</strong> and how to get one without an account minimum.</p></div>
       </div>
-
-      <div class="shead rv" style="margin-bottom:28px">
-        <h2 style="font-size:clamp(24px,2.6vw,32px)">The four we&rsquo;ll name.<br><em>One of them is yours.</em></h2>
-      </div>
-      <div class="beliefs rv">
-        <article class="bf" data-type="A"><span class="bf-y">Yours</span><span class="bf-e">&#128584;</span><div class="bf-n">The Avoider</div><p class="bf-q">&ldquo;If I don&rsquo;t look, it can&rsquo;t hurt me.&rdquo;</p></article>
-        <article class="bf" data-type="S"><span class="bf-y">Yours</span><span class="bf-e">&#10024;</span><div class="bf-n">The Spender</div><p class="bf-q">&ldquo;If I just earned more, my money problems would go away.&rdquo;</p></article>
-        <article class="bf" data-type="T"><span class="bf-y">Yours</span><span class="bf-e">&#128274;</span><div class="bf-n">The Stasher</div><p class="bf-q">&ldquo;If I just hold tight enough, I&rsquo;ll be safe.&rdquo;</p></article>
-        <article class="bf" data-type="R"><span class="bf-y">Yours</span><span class="bf-e">&#128170;</span><div class="bf-n">The Striver</div><p class="bf-q">&ldquo;If I just work harder, I&rsquo;ll get there.&rdquo;</p></article>
-      </div>
-
-      <div class="cta-block rv" style="margin-top:48px">
-        <button class="cta" onclick="reserveSeat()">
-          Reserve My Free Seat
-          <span class="knob"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span>
-        </button>
-        <div class="risk">100% Free For Members &middot; Live Online</div>
+      <div class="cta-w rv">
+        <button class="cta" onclick="openSeat()">Reserve My Free Seat <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
       </div>
     </div>
   </section>
 
-  <!-- ══════════ QUALIFICATION ══════════ -->
-  <section class="sec" style="background:var(--bg-warm);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)">
-    <div class="wrap">
-      <div class="shead rv">
-        <div class="eyebrow">Be Honest With Yourself</div>
-        <h2>This Is Not a <em>Budgeting</em><br>Masterclass.</h2>
-        <p>It&rsquo;s for people who already know what to do with money and still don&rsquo;t do it.</p>
+  <!-- ══════════ BE HONEST ══════════ -->
+  <section class="sec">
+    <div class="w">
+      <div class="c rv">
+        <span class="kick">Be Honest With Yourself</span>
+        <h2 class="h2">This Is Not a <em>Get-Rich</em><br>Masterclass.</h2>
+        <p class="lead">It&rsquo;s an hour on the actual rules of money. The ones you were supposed to be taught and never were.</p>
       </div>
-
-      <div class="qual rv">
-        <div class="qc qc-yes">
+      <div class="qual">
+        <div class="qc qc-y rv">
           <h3>This <em>is</em> for you if&hellip;</h3>
           <ul>
-            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>You just started <strong>The Opening Move</strong> and want the belief work running alongside it.</span></li>
-            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>You&rsquo;ve tried budgeting apps and willpower, and <strong>neither one lasted a month</strong>.</span></li>
-            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Your income went up and your financial life somehow <strong>didn&rsquo;t change with it</strong>.</span></li>
-            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>You&rsquo;re willing to hear the honest version rather than the comfortable one.</span></li>
-            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>You want to understand <strong>why</strong> the old pattern keeps winning, not just be told to try harder.</span></li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>You <strong>make good money</strong> and still feel like you have nothing to show for it.</span></li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>You check your balance <strong>with a little dread,</strong> and do the math in your head before you open the app.</span></li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>You&rsquo;ve been told to skip the coffee, and it <strong>never fixed anything.</strong></span></li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Nobody ever showed you <strong>where the money is supposed to go.</strong></span></li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>You&rsquo;d rather have <strong>a real plan</strong> than another app betting on your willpower.</span></li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>You want to <strong>break the chain</strong> before your kids inherit it.</span></li>
           </ul>
         </div>
-        <div class="qc qc-no">
+        <div class="qc qc-n rv">
           <h3>This is <em>not</em> for you if&hellip;</h3>
           <ul>
-            <li><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span>You&rsquo;re looking for a get-rich-quick scheme. This changes a belief, it doesn&rsquo;t print money.</span></li>
-            <li><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span>You want someone else to manage your money for you.</span></li>
-            <li><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span>You want another tactic to add to the pile instead of looking at what&rsquo;s underneath.</span></li>
-            <li><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span>You&rsquo;re not willing to get honest about the sentence you&rsquo;ve been carrying.</span></li>
-            <li><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span>You think the problem is only your income, and you&rsquo;re not open to looking inward.</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg><span>You&rsquo;re looking for a stock tip or a get-rich-quick scheme.</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg><span>You want someone to manage your money so you never have to understand it.</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg><span>You think the only fix is earning more.</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg><span>You&rsquo;re not willing to be honest with yourself for one hour.</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg><span>You&rsquo;d rather keep guessing than learn the rules.</span></li>
           </ul>
         </div>
       </div>
-
-      <div class="cta-block rv" style="margin-top:44px">
-        <button class="cta" onclick="reserveSeat()">
-          Reserve My Free Seat
-          <span class="knob"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span>
-        </button>
-        <div class="risk">100% Free For Members &middot; Live Online</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ PROOF ══════════ -->
-  <section class="proof sec">
-    <div class="wrap-narrow">
-      <div class="proof-in rv">
-        <div class="proof-eyebrow">Why The Belief, Not The Budget</div>
-        <p class="proof-q">I&rsquo;ve coached people making fifty thousand a year who are building wealth, and people making three hundred thousand a year who are one paycheck from broke. <b>The difference isn&rsquo;t income.</b></p>
-        <div class="proof-by">Kevin &middot; Money Mastery Institute</div>
+      <div class="cta-w rv">
+        <button class="cta" onclick="openSeat()">Reserve My Free Seat <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
       </div>
     </div>
   </section>
 
   <!-- ══════════ HOST ══════════ -->
-  <section class="sec">
-    <div class="wrap-narrow">
-      <div class="host rv">
-        <span class="host-plate"><img src="https://assets.cdn.filesafe.space/xMzw9tBDHfIEH1AXFH9n/media/6a3b4a88817563b473beebe7.png" alt=""></span>
-        <div>
-          <div class="host-e">Meet Your Host</div>
-          <div class="host-n">I&rsquo;m Kevin.<br><em>And I&rsquo;ve coached this for years.</em></div>
-          <p class="host-b">Most people who feel stuck with money can recite the tactics. They know what a budget is. They know they should save. <strong>Knowing has never once been the part they were stuck on.</strong></p>
-          <p class="host-b">What I see over and over is a sentence running underneath the decisions &mdash; inherited, never chosen, and never said out loud. Name it, and the tactics people already knew finally start working.</p>
-          <p class="host-b">That&rsquo;s the whole hour. Four beliefs, where each one comes from, and the one that replaces yours.</p>
+  <section class="sec warm">
+    <div class="w">
+      <div class="host">
+        <div class="av-wrap rv">
+          <div class="av"><img src="https://javmartz04-ship-it.github.io/mmi-webinar-invite/kevin-avatar.jpg" alt="Kevin Jaramillo" width="520" height="520" loading="lazy"></div>
+          <div class="stat-card">
+            <div class="sc-num">9/10</div>
+            <p class="sc-cap">of the people who sat down across from me, with good incomes and real jobs, could not produce the funds.</p>
+            <div class="sc-src">Two years at the seminar table</div>
+          </div>
+        </div>
+        <div class="host-t rv">
+          <span class="kick">Meet Your Host</span>
+          <h2 class="h2">I&rsquo;m Kevin Jaramillo.<br><em>Nobody Taught Me Either.</em></h2>
+          <p>I owned a landscape construction company for <strong>22 years.</strong> I built it with my hands, ran it well, and made real money. I built my own home and raised my family in it. By every measure, I was doing well.</p>
+          <p>What I never learned were <strong>the rules about investing, or protecting what I built.</strong> My dad was never a pilot. If I wanted to fly, I&rsquo;d have to go learn it myself. Money works exactly the same way.</p>
+          <p>Then I spent two years at the qualification table of investing seminars, watching good people realize the money just wasn&rsquo;t there. <strong>It wasn&rsquo;t a money problem. It was a rules problem.</strong> So I started teaching the rules myself.</p>
+          <div class="stats">
+            <div class="st"><b>~40</b><span>Years In Business</span></div>
+            <div class="st"><b>22</b><span>Years As An Owner</span></div>
+            <div class="st"><b>5</b><span>Years Building MMI</span></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ══════════ CLOSE ══════════ -->
-  <section class="close sec">
-    <div class="wrap-narrow">
-      <div class="shead rv" style="margin-bottom:34px">
-        <div class="eyebrow">Last Step</div>
-        <h2>Your seat is held<br><em>until it isn&rsquo;t.</em></h2>
-        <p>You&rsquo;ve already made the first move. Spend one more hour on the belief underneath it and the next seven days land very differently.</p>
+  <!-- ══════════ RESULTS ══════════ -->
+  <section class="sec">
+    <div class="w">
+      <div class="c rv">
+        <span class="kick">Real Results &middot; Real People</span>
+        <h2 class="h2">They Started Exactly Where<br><em>You&rsquo;re Sitting Right Now.</em></h2>
+        <p class="lead">A teenager. A working couple. A retiree. Different starting points, same rules.</p>
       </div>
-      <div class="cta-block rv">
-        <button class="cta" onclick="reserveSeat()">
-          Reserve My Free Seat
-          <span class="knob"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span>
-        </button>
-        <div class="risk">100% Free For Members &middot; Live Online</div>
-        <p class="skip">Not right now? <a onclick="skipToCourse()">Go straight to Day One</a></p>
+      <div class="quotes">
+        <figure class="q rv">
+          <div class="q-mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>I didn&rsquo;t just learn the rules. I lived them, and <em>bought my first home at twenty.</em></blockquote>
+          <figcaption class="q-by"><span class="q-in">D</span><span class="q-meta"><b>Kevin&rsquo;s Daughter</b><i>Learned the rules starting at 15</i></span></figcaption>
+        </figure>
+        <figure class="q rv">
+          <div class="q-mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>I thought I already had it together. Kevin <em>found the gaps in my asset protection and tax structure</em> before they cost me.</blockquote>
+          <figcaption class="q-by"><span class="q-in">A</span><span class="q-meta"><b>Aaron</b><i>35 years at UPS, newly retired</i></span></figcaption>
+        </figure>
+        <figure class="q rv">
+          <div class="q-mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>We were making good money and still had no idea where it should go. <em>Now we own five properties.</em></blockquote>
+          <figcaption class="q-by"><span class="q-in">M</span><span class="q-meta"><b>Melvin &amp; Natalie</b><i>Air Force couple, clients for about 5 years</i></span></figcaption>
+        </figure>
+      </div>
+      <div class="cta-w rv">
+        <button class="cta" onclick="openSeat()">Reserve My Free Seat <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <div class="risk">100% Free Live Training &middot; One Hour With Kevin</div>
       </div>
     </div>
   </section>
 
+  <!-- ══════════ FOOTER ══════════ -->
   <footer class="foot">
-    <div class="wrap"><div class="foot-in">
-      <span class="foot-plate"><img class="foot-logo" src="https://assets.cdn.filesafe.space/xMzw9tBDHfIEH1AXFH9n/media/6a3b4a88817563b473beebe7.png" alt="Money Mastery Institute"></span>
-      <span class="foot-copy">Copyright 2026 Money Mastery Institute. All rights reserved.</span>
-    </div></div>
+    <div class="w">
+      <img src="https://assets.cdn.filesafe.space/xMzw9tBDHfIEH1AXFH9n/media/6a3b4a88817563b473beebe7.png" alt="Money Mastery Institute" width="2000" height="555" loading="lazy">
+      <div class="foot-tag">Lifestyle By Design</div>
+      <div class="foot-rule"></div>
+      <div class="foot-copy">&copy; 2026 Money Mastery Institute. All rights reserved.</div>
+    </div>
   </footer>
+
+  <!-- registration modal: the GHL form loads here -->
+  <div class="modal" id="seat-modal" role="dialog" aria-modal="true" aria-labelledby="modal-h" onclick="if(event.target===this)closeSeat()">
+    <div class="modal-box">
+      <button class="modal-x" onclick="closeSeat()" aria-label="Close">&times;</button>
+      <div class="modal-h" id="modal-h">Reserve your free seat.</div>
+      <div class="modal-s">Enter your details and Kevin&rsquo;s team will send your link.</div>
+      <iframe id="seat-frame" title="Masterclass registration" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <div class="sticky" id="sticky"><button class="cta" onclick="openSeat()">Reserve My Free Seat <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
 </div>
 
 <script>
 /* ══════════════════════════════════════════════════════════════════
-   SET THESE THREE BEFORE GOING LIVE — empty on purpose, nothing
-   here is invented. The page degrades honestly rather than showing
-   a fake date or a dead button.
+   SET BEFORE GOING LIVE. Empty on purpose. Nothing here is invented.
+   WEBINAR_FORM_URL  GHL registration form link. Opens in the modal,
+                     the same way Karla's page opens her form.
+   WEBINAR_WHEN      e.g. 'Thursday · 7:00 PM PT'. Shown in the top bar.
    ══════════════════════════════════════════════════════════════════ */
-const WEBINAR_REGISTER_URL = '';   // GHL webinar registration link
-const WEBINAR_DATE_TEXT    = '';   // e.g. 'Thursday, Sept 25 · 7:00 PM CT'
-const COURSE_URL           = '';   // where "Go straight to Day One" sends them
-/* ══════════════════════════════════════════════════════════════════ */
+const WEBINAR_FORM_URL = '';
+const WEBINAR_WHEN     = '';
 
-/* GHL host armor */
-(function armorHost(){
+/* GHL host armor: clears whatever the host names its wrappers */
+(function(){
   function clear(){
     var el=document.getElementById('mmi-root'); if(!el)return;
     for(var n=el.parentElement;n&&n!==document.documentElement;n=n.parentElement){
-      n.style.setProperty('background','transparent','important');
-      n.style.setProperty('background-image','none','important');
-      n.style.setProperty('padding','0','important');
-      n.style.setProperty('margin','0','important');
-      n.style.setProperty('max-width','none','important');
-      n.style.setProperty('width','100%','important');
-      n.style.setProperty('border','0','important');
+      ['background','background-image','padding','margin','max-width','width','border'].forEach(function(p,i){
+        n.style.setProperty(p,['transparent','none','0','0','none','100%','0'][i],'important');
+      });
     }
-    document.documentElement.style.setProperty('background','#F4F5FA','important');
-    document.body.style.setProperty('background','#F4F5FA','important');
+    document.documentElement.style.setProperty('background','#FBFBF8','important');
+    document.body.style.setProperty('background','#FBFBF8','important');
   }
-  clear();
-  if(document.readyState!=='complete')window.addEventListener('load',clear);
-  setTimeout(clear,400);setTimeout(clear,1500);
+  clear(); if(document.readyState!=='complete')window.addEventListener('load',clear);
+  setTimeout(clear,400); setTimeout(clear,1500);
 })();
 
-/* real date if set, honest placeholder if not */
-(function(){
-  if(!WEBINAR_DATE_TEXT)return;
-  var c=document.getElementById('chip-date'); if(c)c.textContent=WEBINAR_DATE_TEXT;
-  var b=document.getElementById('bar-date'); if(b)b.textContent='FREE LIVE MASTERCLASS · '+WEBINAR_DATE_TEXT.toUpperCase();
-})();
+if(WEBINAR_WHEN){
+  var bt=document.getElementById('bar-text');
+  if(bt)bt.innerHTML='Free Live Masterclass <b>&middot;</b> '+WEBINAR_WHEN;
+}
 
-function reserveSeat(){
-  if(WEBINAR_REGISTER_URL){window.location.href=WEBINAR_REGISTER_URL;return;}
-  notice('WEBINAR_REGISTER_URL is not set yet — point this at the registration link.');
+function openSeat(){
+  if(!WEBINAR_FORM_URL){ toast('WEBINAR_FORM_URL is not set yet. Paste the GHL form link to turn this on.'); return; }
+  var f=document.getElementById('seat-frame');
+  if(!f.getAttribute('src'))f.setAttribute('src',WEBINAR_FORM_URL);
+  document.getElementById('seat-modal').classList.add('open');
+  document.documentElement.style.overflow='hidden';
 }
-function skipToCourse(){
-  if(COURSE_URL){window.location.href=COURSE_URL;return;}
-  notice('COURSE_URL is not set yet — point this at the members area.');
+function closeSeat(){
+  document.getElementById('seat-modal').classList.remove('open');
+  document.documentElement.style.overflow='';
 }
-function notice(msg){
-  var n=document.getElementById('cfg-notice');
+document.addEventListener('keydown',function(e){ if(e.key==='Escape')closeSeat(); });
+
+function toast(msg){
+  var n=document.getElementById('mmi-toast');
   if(!n){
-    n=document.createElement('div');n.id='cfg-notice';
-    n.style.cssText='position:fixed;left:50%;bottom:28px;transform:translate(-50%,140%);z-index:10000;'
-      +'padding:14px 22px;border-radius:999px;background:#0A0F2E;color:#fff;'
-      +"font:600 13px Poppins,sans-serif;box-shadow:0 30px 70px -20px rgba(0,0,0,.5);"
-      +'transition:transform .5s cubic-bezier(.34,1.56,.64,1);max-width:92vw;text-align:center';
+    n=document.createElement('div'); n.id='mmi-toast';
+    n.style.cssText='position:fixed;left:50%;bottom:28px;transform:translate(-50%,160%);z-index:10000;max-width:92vw;'
+      +'padding:14px 22px;border-radius:999px;background:#14213D;color:#fff;text-align:center;'
+      +"font:600 13.5px 'DM Sans',system-ui,sans-serif;box-shadow:0 30px 70px -20px rgba(0,0,0,.5);"
+      +'transition:transform .5s cubic-bezier(.22,1,.36,1)';
     document.body.appendChild(n);
   }
   n.textContent=msg;
-  requestAnimationFrame(function(){n.style.transform='translate(-50%,0)';});
-  clearTimeout(window._nT);window._nT=setTimeout(function(){n.style.transform='translate(-50%,140%)';},4200);
+  requestAnimationFrame(function(){ n.style.transform='translate(-50%,0)'; });
+  clearTimeout(window._mmiT); window._mmiT=setTimeout(function(){ n.style.transform='translate(-50%,160%)'; },4200);
 }
 
-/* highlight the visitor's own belief from the quiz result the quiz page stored */
+/* sticky mobile CTA: appears once the hero CTA has scrolled away */
 (function(){
-  var MAX=30*24*60*60*1000;
-  try{
-    var raw=localStorage.getItem('mmi_quiz_result');if(!raw)return;
-    var d=JSON.parse(raw);
-    if(!d.type||!d.ts||(Date.now()-d.ts)>MAX)return;
-    /* clear first — never let two cards claim to be yours */
-    document.querySelectorAll('.bf.is-yours').forEach(function(x){x.classList.remove('is-yours');});
-    var c=document.querySelector('.bf[data-type="'+d.type+'"]');
-    if(c)c.classList.add('is-yours');
-  }catch(_){}
+  var s=document.getElementById('sticky'), hero=document.querySelector('.hero .cta');
+  if(!s||!hero||!('IntersectionObserver' in window))return;
+  new IntersectionObserver(function(e){ s.classList.toggle('show', !e[0].isIntersecting && e[0].boundingClientRect.top<0); }).observe(hero);
 })();
 
-/* scroll reveal with failsafe */
+/* reveal, with a failsafe so nothing can stay hidden */
 (function(){
-  var els=document.querySelectorAll('.rv');
-  if(!('IntersectionObserver' in window)){for(var i=0;i<els.length;i++)els[i].classList.add('in');return;}
-  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(!e.isIntersecting)return;e.target.classList.add('in');io.unobserve(e.target);});},{rootMargin:'0px 0px -8% 0px',threshold:.12});
-  for(var j=0;j<els.length;j++)io.observe(els[j]);
-  setTimeout(function(){for(var k=0;k<els.length;k++)els[k].classList.add('in');},3500);
+  var els=document.querySelectorAll('#mmi-root .rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(e){ if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);} });},{rootMargin:'0px 0px -6% 0px',threshold:.08});
+  els.forEach(function(e){io.observe(e)});
+  setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},3000);
 })();
 </script>
 
